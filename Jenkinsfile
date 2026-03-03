@@ -12,7 +12,7 @@ pipeline {
         stage('Compilacion') {
             steps {
                 echo 'Compilando el proyecto...'
-                sh 'gcc -o app app.c'
+                sh 'gcc -o app main.c app.c'
             }
         }
 
